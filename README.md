@@ -19,21 +19,28 @@ Code Validator is a web application that allows users to write HTML, CSS, and Ja
    git clone https://github.com/im-nishantg/Code-Validator
    
 2. Navigate to the project directory:
+   ```bash
    cd code-validator
    
 3. Install dependencies for both client and server:
+   ```bash
    cd client
    npm install
    cd ../server
    npm install
 
 4. Start the server
+   ```bash
    npm start
    
 5. Start the client
+   ```bash
    npm run dev
 
 ## Approach
-Frontend: The frontend is built using React.js. It provides a user interface for writing HTML, CSS, and JavaScript code snippets using CodeMirror. When the user clicks on the "Run Tests" button, the frontend sends the code snippets to the backend for validation.
-Backend: The backend is built using Node.js and Express.js. It receives the code snippets from the frontend and runs predefined tests using Cheerio, a jQuery-like library for parsing HTML. Each test checks specific aspects of the code snippets, such as the presence of certain elements or attributes.
-Communication: The frontend communicates with the backend using Axios, a promise-based HTTP client.
+
+1. Frontend: The frontend is built using React.js. It provides a user interface for writing HTML, CSS, and JavaScript code snippets using CodeMirror. When the user clicks on the "Run Tests" button, the frontend sends the code snippets to the backend for validation.
+
+2. Backend: The backend is built using Node.js and Express.js. It receives the code snippets from the frontend and runs predefined tests using Cheerio, a jQuery-like library for parsing HTML. Each test checks specific aspects of the code snippets, such as the presence of certain elements or attributes.
+
+3. Communication: The frontend communicates with the backend using Axios, a promise-based HTTP client.
